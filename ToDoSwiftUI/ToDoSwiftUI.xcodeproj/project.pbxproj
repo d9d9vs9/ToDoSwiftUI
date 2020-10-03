@@ -22,6 +22,7 @@
 		22FA57042528D47B00495B98 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA57032528D47B00495B98 /* SyncService.swift */; };
 		22FA570A2528D4DA00495B98 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA57092528D4DA00495B98 /* StorageService.swift */; };
 		22FA57222528D5D400495B98 /* SecureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA57212528D5D400495B98 /* SecureService.swift */; };
+		22FA572B2528DC6300495B98 /* ConcurrencyAndMultithreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA572A2528DC6300495B98 /* ConcurrencyAndMultithreading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		22FA57032528D47B00495B98 /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		22FA57092528D4DA00495B98 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		22FA57212528D5D400495B98 /* SecureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureService.swift; sourceTree = "<group>"; };
+		22FA572A2528DC6300495B98 /* ConcurrencyAndMultithreading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyAndMultithreading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		22FA56F52528D37300495B98 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				22FA57262528DC4900495B98 /* ConcurrencyAndMultithreading */,
 				22FA57202528D5C600495B98 /* SecureService */,
 				22FA57082528D4BD00495B98 /* StorageManager */,
 				22FA57022528D46600495B98 /* SyncService */,
@@ -283,6 +286,14 @@
 				22FA57212528D5D400495B98 /* SecureService.swift */,
 			);
 			path = SecureService;
+			sourceTree = "<group>";
+		};
+		22FA57262528DC4900495B98 /* ConcurrencyAndMultithreading */ = {
+			isa = PBXGroup;
+			children = (
+				22FA572A2528DC6300495B98 /* ConcurrencyAndMultithreading.swift */,
+			);
+			path = ConcurrencyAndMultithreading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +436,7 @@
 				22FA56F82528D3E400495B98 /* CoreDataStorageService.swift in Sources */,
 				22FA56FE2528D44400495B98 /* RemoteStorageService.swift in Sources */,
 				22FA56A62528C38100495B98 /* ContentView.swift in Sources */,
+				22FA572B2528DC6300495B98 /* ConcurrencyAndMultithreading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
