@@ -16,6 +16,12 @@
 		22FA56B12528C38300495B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FA56AF2528C38300495B98 /* LaunchScreen.storyboard */; };
 		22FA56BC2528C38400495B98 /* ToDoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA56BB2528C38400495B98 /* ToDoSwiftUITests.swift */; };
 		22FA56C72528C38400495B98 /* ToDoSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA56C62528C38400495B98 /* ToDoSwiftUIUITests.swift */; };
+		22FA56EE2528D31C00495B98 /* AppStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA56ED2528D31C00495B98 /* AppStyling.swift */; };
+		22FA56F82528D3E400495B98 /* CoreDataStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA56F72528D3E400495B98 /* CoreDataStorageService.swift */; };
+		22FA56FE2528D44400495B98 /* RemoteStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA56FD2528D44400495B98 /* RemoteStorageService.swift */; };
+		22FA57042528D47B00495B98 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA57032528D47B00495B98 /* SyncService.swift */; };
+		22FA570A2528D4DA00495B98 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA57092528D4DA00495B98 /* StorageService.swift */; };
+		22FA57222528D5D400495B98 /* SecureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA57212528D5D400495B98 /* SecureService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		22FA56C22528C38400495B98 /* ToDoSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FA56C62528C38400495B98 /* ToDoSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSwiftUIUITests.swift; sourceTree = "<group>"; };
 		22FA56C82528C38400495B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FA56ED2528D31C00495B98 /* AppStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyling.swift; sourceTree = "<group>"; };
+		22FA56F72528D3E400495B98 /* CoreDataStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorageService.swift; sourceTree = "<group>"; };
+		22FA56FD2528D44400495B98 /* RemoteStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStorageService.swift; sourceTree = "<group>"; };
+		22FA57032528D47B00495B98 /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		22FA57092528D4DA00495B98 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		22FA57212528D5D400495B98 /* SecureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +113,11 @@
 		22FA56A02528C38100495B98 /* ToDoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				22FA56A12528C38100495B98 /* AppDelegate.swift */,
-				22FA56A32528C38100495B98 /* SceneDelegate.swift */,
+				22FA56F52528D37300495B98 /* Services */,
+				22FA56EB2528D30300495B98 /* Utilities */,
+				22FA56E62528D2B100495B98 /* CoreData */,
+				22FA56E02528D26B00495B98 /* Resources */,
 				22FA56A52528C38100495B98 /* ContentView.swift */,
-				22FA56AA2528C38300495B98 /* Assets.xcassets */,
-				22FA56AF2528C38300495B98 /* LaunchScreen.storyboard */,
-				22FA56B22528C38300495B98 /* Info.plist */,
-				22FA56A72528C38100495B98 /* ToDoSwiftUI.xcdatamodeld */,
 				22FA56AC2528C38300495B98 /* Preview Content */,
 			);
 			path = ToDoSwiftUI;
@@ -137,6 +147,142 @@
 				22FA56C82528C38400495B98 /* Info.plist */,
 			);
 			path = ToDoSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		22FA56E02528D26B00495B98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56E52528D2A500495B98 /* LaunchScreen */,
+				22FA56E42528D29A00495B98 /* InfoPlist */,
+				22FA56E32528D29100495B98 /* Assets */,
+				22FA56E22528D27E00495B98 /* SceneDelegate */,
+				22FA56E12528D27600495B98 /* AppDelegate */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22FA56E12528D27600495B98 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56A12528C38100495B98 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		22FA56E22528D27E00495B98 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56A32528C38100495B98 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		22FA56E32528D29100495B98 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56AA2528C38300495B98 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		22FA56E42528D29A00495B98 /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56B22528C38300495B98 /* Info.plist */,
+			);
+			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		22FA56E52528D2A500495B98 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56AF2528C38300495B98 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		22FA56E62528D2B100495B98 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56E72528D2B400495B98 /* Model */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		22FA56E72528D2B400495B98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56A72528C38100495B98 /* ToDoSwiftUI.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22FA56EB2528D30300495B98 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56EC2528D30D00495B98 /* AppStyling */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		22FA56EC2528D30D00495B98 /* AppStyling */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56ED2528D31C00495B98 /* AppStyling.swift */,
+			);
+			path = AppStyling;
+			sourceTree = "<group>";
+		};
+		22FA56F52528D37300495B98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22FA57202528D5C600495B98 /* SecureService */,
+				22FA57082528D4BD00495B98 /* StorageManager */,
+				22FA57022528D46600495B98 /* SyncService */,
+				22FA56FC2528D42400495B98 /* RemoteStorageService */,
+				22FA56F62528D39200495B98 /* CoreDataStorageService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		22FA56F62528D39200495B98 /* CoreDataStorageService */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56F72528D3E400495B98 /* CoreDataStorageService.swift */,
+			);
+			path = CoreDataStorageService;
+			sourceTree = "<group>";
+		};
+		22FA56FC2528D42400495B98 /* RemoteStorageService */ = {
+			isa = PBXGroup;
+			children = (
+				22FA56FD2528D44400495B98 /* RemoteStorageService.swift */,
+			);
+			path = RemoteStorageService;
+			sourceTree = "<group>";
+		};
+		22FA57022528D46600495B98 /* SyncService */ = {
+			isa = PBXGroup;
+			children = (
+				22FA57032528D47B00495B98 /* SyncService.swift */,
+			);
+			path = SyncService;
+			sourceTree = "<group>";
+		};
+		22FA57082528D4BD00495B98 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				22FA57092528D4DA00495B98 /* StorageService.swift */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
+		22FA57202528D5C600495B98 /* SecureService */ = {
+			isa = PBXGroup;
+			children = (
+				22FA57212528D5D400495B98 /* SecureService.swift */,
+			);
+			path = SecureService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +415,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FA57222528D5D400495B98 /* SecureService.swift in Sources */,
 				22FA56A22528C38100495B98 /* AppDelegate.swift in Sources */,
+				22FA56EE2528D31C00495B98 /* AppStyling.swift in Sources */,
 				22FA56A92528C38100495B98 /* ToDoSwiftUI.xcdatamodeld in Sources */,
+				22FA570A2528D4DA00495B98 /* StorageService.swift in Sources */,
 				22FA56A42528C38100495B98 /* SceneDelegate.swift in Sources */,
+				22FA57042528D47B00495B98 /* SyncService.swift in Sources */,
+				22FA56F82528D3E400495B98 /* CoreDataStorageService.swift in Sources */,
+				22FA56FE2528D44400495B98 /* RemoteStorageService.swift in Sources */,
 				22FA56A62528C38100495B98 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +596,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = URMC99RRR3;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ToDoSwiftUI/Info.plist;
+				INFOPLIST_FILE = ToDoSwiftUI/Resources/InfoPlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,7 +618,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = URMC99RRR3;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ToDoSwiftUI/Info.plist;
+				INFOPLIST_FILE = ToDoSwiftUI/Resources/InfoPlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
