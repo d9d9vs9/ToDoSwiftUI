@@ -92,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2282E0F1253A3FAD00FEB6F5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		22FA56952528C38100495B98 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +122,7 @@
 		22FA56A02528C38100495B98 /* ToDoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2282E0F1253A3FAD00FEB6F5 /* Modules */,
 				22FA56F52528D37300495B98 /* Services */,
 				22FA56EB2528D30300495B98 /* Utilities */,
 				22FA56E62528D2B100495B98 /* CoreData */,
